@@ -1,0 +1,67 @@
+---
+format: 
+    revealjs:
+        theme: default
+        logo: "images/JAX_logo_rgb_transparentback.png"
+        slide-number: true
+        footer: Imaging Applications, Research IT
+        transition: "slide"
+        highlight-style: github
+        chalkboard: 
+            buttons: false
+---
+
+## Introduction to CellProfiler
+
+**Peter Sobolewski (he/him)**
+
+Systems Analyst, Imaging Applications
+
+Research IT
+
+![CellProfiler logo](images/image.png)
+https://cellprofiler.org/home
+
+---
+
+## Plan for Day 1
+
+- Introduction to CellProfiler
+- Overview of basic CellProfiler concepts
+    - projects, pipelines, modules 
+- User Interface (UI) Walk-through
+- Hands-on tutorial
+
+---
+
+## A bit of background
+
+- project started in 2003 by Anne Carpenter and Thouis Jones at MIT
+- currently developed by [the Beth Cimini lab](https://cimini-lab.broadinstitute.org/) at the Broad Institute
+- \>15000 publications citing CellProfiler
+
+---
+
+### What is CellProfiler
+
+CellProfiler is an open-source image analysis program
+
+
+It has a graphical interface for assembling image processing and analysis workflows (called `pipelines`) using a sequence of modular analysis `modules` 
+
+---
+
+### What is CellProfiler
+
+In contrast to ImageJ, which is ideal for single-image viewing and processing, CellProfiler was designed for batch image analysis using reproducible workflows
+
+---
+
+### The concept
+
+- Create a `project` that has and image file list and an associated `pipeline` 
+- Use the GUI to develop the `pipeline`
+    - Start with images and end with measurements in a spreadsheet (`.csv`) or a MySQL database
+- run in batches over large number of images
+- analyze measurement data in the downstream tool of your choice (Python, R, Excel, CellProfiler Analyst, etc.)
+
