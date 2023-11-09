@@ -6,9 +6,10 @@ format:
         slide-number: true
         footer: Imaging Applications, Research IT
         transition: "slide"
-        highlight-style: github
+        highlight-style: arrow
         chalkboard: 
             buttons: false
+        controls-layout: bottom-right
 ---
 
 ## Introduction to CellProfiler
@@ -42,18 +43,37 @@ https://cellprofiler.org/home
 
 ---
 
-### What is CellProfiler
+## What is CellProfiler?
 
 CellProfiler is an open-source image analysis program
 
+<br/>
 
-It has a graphical interface for assembling image processing and analysis workflows (called `pipelines`) using a sequence of modular analysis `modules` 
+**Key feature**:  
+CellProfiler has a graphical user interface (`GUI`) for assembling image processing and analysis workflows (called `pipelines`) using a sequence of modular analysis `modules` 
 
 ---
 
-### What is CellProfiler
+## Strengths of CellProfiler
 
-In contrast to ImageJ, which is ideal for single-image viewing and processing, CellProfiler was designed for batch image analysis using reproducible workflows
+- It was designed for batch image analysis using reproducible workflows—*without scripting*
+
+- It *includes* advanced algorithms for image (pre)processing, segmentation, etc. as modular `modules`
+
+- Includes in-app documentation for `module` parameters
+
+- End-to-end: images go in, data tables go out
+
+---
+
+## Limitations
+
+- Limited *viewing* capabilities:
+    - single planes, single channels only
+- No annotation tools
+- Limited out-of-memory performance
+    - no support for multiscale ("pyramidal")
+    - no built-in tiling/chunking
 
 ---
 
