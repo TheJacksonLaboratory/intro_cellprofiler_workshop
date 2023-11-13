@@ -39,7 +39,8 @@ https://cellprofiler.org/home
 
 - project started in 2003 by Anne Carpenter and Thouis Jones at MIT
 - currently developed by [the Beth Cimini lab](https://cimini-lab.broadinstitute.org/) at the Broad Institute
-- \>15000 publications citing CellProfiler
+- \>15000 publications [citing CellProfiler](https://cellprofiler.org/citations)
+    - Many shared `pipelines`: [https://cellprofiler.org/published-pipelines](https://cellprofiler.org/published-pipelines)
 
 ---
 
@@ -60,9 +61,9 @@ CellProfiler has a graphical user interface (`GUI`) for assembling image process
 
 - It *includes* advanced algorithms for image (pre)processing, segmentation, etc. as modular `modules`
 
-- Includes in-app documentation for `module` parameters
+- It *includes* in-app documentation for `module` parameters plus extensive help menu
 
-- End-to-end: images go in, data tables go out
+- End-to-end workflows: images go in, data tables go out
 
 ---
 
@@ -72,16 +73,41 @@ CellProfiler has a graphical user interface (`GUI`) for assembling image process
     - single planes, single channels only
 - No annotation tools
 - Limited out-of-memory performance
-    - no support for multiscale ("pyramidal")
-    - no built-in tiling/chunking
+    - lacking support for multiscale ("pyramidal") images
+    - lacking built-in tiling/chunking
 
 ---
 
-### The concept
+## The CellProfiler concept
 
-- Create a `project` that has and image file list and an associated `pipeline` 
-- Use the GUI to develop the `pipeline`
-    - Start with images and end with measurements in a spreadsheet (`.csv`) or a MySQL database
+- Create a `project` that has an associated image file list and an associated `pipeline` 
+- Use the GUI to add a sequence of `modules` to develop the image analysis `pipeline`
+    - Start with input images and end with measurements in a spreadsheet (`.csv`) or a MySQL database
 - run in batches over large number of images
-- analyze measurement data in the downstream tool of your choice (Python, R, Excel, CellProfiler Analyst, etc.)
+- analyze measurement data in the downstream tool of your choice (Python, R, Excel, etc.)
 
+## CellProfiler `projects` & `pipelines`
+
+- `projects` contain a list of the *locations* of your image files plus an associated CellProfiler analysis `pipeline`
+    - `projects` will also contain some cached computed results
+
+<br/>
+
+- `pipelines` can be exported, but *do not contain image locations*—this is ideal for sharing or reuseing workflows
+
+## Keys to success
+
+- ensure image inputs and intermediate step outputs have meaningful names
+- use `Test` mode to see the outputs of individual `modulues` (`pipeline` steps) one-at-a-time
+    - let's you test parameters on a single image or any number of images (even a randomly selected one)
+    - can run the whole `pipeline` or just individual `modules`  
+
+## Getting more help
+
+- Online manual: [https://cellprofiler.org/manuals](https://cellprofiler.org/manuals)
+
+- Extensive tutorials: [https://tutorials.cellprofiler.org/](https://tutorials.cellprofiler.org/)
+
+- Extensive examples: [https://cellprofiler.org/examples](https://cellprofiler.org/examples)
+
+- Image.sc forum: [https://forum.image.sc/tag/cellprofiler](https://forum.image.sc/tag/cellprofiler)

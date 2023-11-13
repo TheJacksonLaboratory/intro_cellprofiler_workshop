@@ -350,7 +350,10 @@
 <ul>
 <li>project started in 2003 by Anne Carpenter and Thouis Jones at MIT</li>
 <li>currently developed by <a href="https://cimini-lab.broadinstitute.org/">the Beth Cimini lab</a> at the Broad Institute</li>
-<li>&gt;15000 publications citing CellProfiler</li>
+<li>&gt;15000 publications <a href="https://cellprofiler.org/citations">citing CellProfiler</a>
+<ul>
+<li>Many shared <code>pipelines</code>: <a href="https://cellprofiler.org/published-pipelines">https://cellprofiler.org/published-pipelines</a></li>
+</ul></li>
 </ul>
 </section>
 <section id="what-is-cellprofiler" class="slide level2">
@@ -360,28 +363,73 @@
 <p><strong>Key feature</strong>:<br>
 CellProfiler has a graphical user interface (<code>GUI</code>) for assembling image processing and analysis workflows (called <code>pipelines</code>) using a sequence of modular analysis <code>modules</code></p>
 </section>
-<section id="why-use-cellprofiler" class="slide level2">
-<h2>Why use CellProfiler?</h2>
+<section id="strengths-of-cellprofiler" class="slide level2">
+<h2>Strengths of CellProfiler</h2>
 <ul>
-<li><p>It was designed for batch image analysis using reproducible workflows—without scripting</p></li>
-<li><p>It includes advanced algorithms for image (pre)processing, segmentation, etc.</p></li>
+<li><p>It was designed for batch image analysis using reproducible workflows—<em>without scripting</em></p></li>
+<li><p>It <em>includes</em> advanced algorithms for image (pre)processing, segmentation, etc. as modular <code>modules</code></p></li>
+<li><p>It <em>includes</em> in-app documentation for <code>module</code> parameters plus extensive help menu</p></li>
+<li><p>End-to-end workflows: images go in, data tables go out</p></li>
 </ul>
 </section>
-<section id="why-use-cellprofiler-1" class="slide level2">
-<h2>Why use CellProfiler?</h2>
-<p><br> In contrast to ImageJ/Fiji, which is ideal for single-image viewing and processing, CellProfiler was designed for batch image analysis using reproducible workflows</p>
+<section id="limitations" class="slide level2">
+<h2>Limitations</h2>
+<ul>
+<li>Limited <em>viewing</em> capabilities:
+<ul>
+<li>single planes, single channels only</li>
+</ul></li>
+<li>No annotation tools</li>
+<li>Limited out-of-memory performance
+<ul>
+<li>lacking support for multiscale (“pyramidal”) images</li>
+<li>lacking built-in tiling/chunking</li>
+</ul></li>
+</ul>
 </section>
-<section class="slide level2">
-
-<h3 id="the-concept">The concept</h3>
+<section id="the-cellprofiler-concept" class="slide level2">
+<h2>The CellProfiler concept</h2>
 <ul>
-<li>Create a <code>project</code> that has and image file list and an associated <code>pipeline</code></li>
-<li>Use the GUI to develop the <code>pipeline</code>
+<li>Create a <code>project</code> that has an associated image file list and an associated <code>pipeline</code></li>
+<li>Use the GUI to add a sequence of <code>modules</code> to develop the image analysis <code>pipeline</code>
 <ul>
-<li>Start with images and end with measurements in a spreadsheet (<code>.csv</code>) or a MySQL database</li>
+<li>Start with input images and end with measurements in a spreadsheet (<code>.csv</code>) or a MySQL database</li>
 </ul></li>
 <li>run in batches over large number of images</li>
-<li>analyze measurement data in the downstream tool of your choice (Python, R, Excel, CellProfiler Analyst, etc.)</li>
+<li>analyze measurement data in the downstream tool of your choice (Python, R, Excel, etc.)</li>
+</ul>
+</section>
+<section id="cellprofiler-projects-pipelines" class="slide level2">
+<h2>CellProfiler <code>projects</code> &amp; <code>pipelines</code></h2>
+<ul>
+<li><code>projects</code> contain a list of the <em>locations</em> of your image files plus an associated CellProfiler analysis <code>pipeline</code>
+<ul>
+<li><code>projects</code> will also contain some cached computed results</li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li><code>pipelines</code> can be exported, but <em>do not contain image locations</em>—this is ideal for sharing or reuseing workflows</li>
+</ul>
+</section>
+<section id="keys-to-success" class="slide level2">
+<h2>Keys to success</h2>
+<ul>
+<li>ensure image inputs and intermediate step outputs have meaningful names</li>
+<li>use <code>Test</code> mode to see the outputs of individual <code>modulues</code> (<code>pipeline</code> steps) one-at-a-time
+<ul>
+<li>let’s you test parameters on a single image or any number of images (even a randomly selected one)</li>
+<li>can run the whole <code>pipeline</code> or just individual <code>modules</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="getting-more-help" class="slide level2">
+<h2>Getting more help</h2>
+<ul>
+<li><p>Online manual: <a href="https://cellprofiler.org/manuals">https://cellprofiler.org/manuals</a></p></li>
+<li><p>Extensive tutorials: <a href="https://tutorials.cellprofiler.org/">https://tutorials.cellprofiler.org/</a></p></li>
+<li><p>Extensive examples: <a href="https://cellprofiler.org/examples">https://cellprofiler.org/examples</a></p></li>
+<li><p>Image.sc forum: <a href="https://forum.image.sc/tag/cellprofiler">https://forum.image.sc/tag/cellprofiler</a></p></li>
 </ul>
 
 <img src="images/JAX_logo_rgb_transparentback.png" class="slide-logo r-stretch"><div class="footer footer-default">
