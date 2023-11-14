@@ -75,13 +75,15 @@ CellProfiler has a graphical user interface (`GUI`) for assembling image process
 - Limited out-of-memory performance
     - lacking support for multiscale ("pyramidal") images
     - lacking built-in tiling/chunking
+- Limited OMERO support
+- Problematic OME.TIFF handling
 
 ---
 
 ## The CellProfiler concept
 
-- Create a `project` that has an associated image file list and an associated `pipeline` 
-- Use the GUI to add a sequence of `modules` to develop the image analysis `pipeline`
+- Create a `project` that has an associated image file list of *locations* and an associated `pipeline` 
+- Use the GUI to add a sequence of `modules` to implement your analysis—these form a `pipeline`
     - Start with input images and end with measurements in a spreadsheet (`.csv`) or a MySQL database
 - run in batches over large number of images
 - analyze measurement data in the downstream tool of your choice (Python, R, Excel, etc.)
@@ -97,7 +99,7 @@ CellProfiler has a graphical user interface (`GUI`) for assembling image process
 
 ## Keys to success
 
-- ensure image inputs and intermediate step outputs have meaningful names
+- ensure image inputs are properly set up (`NamesAndTypes`) and that they and intermediate step outputs have meaningful names
 - use `Test` mode to see the outputs of individual `modulues` (`pipeline` steps) one-at-a-time
     - let's you test parameters on a single image or any number of images (even a randomly selected one)
     - can run the whole `pipeline` or just individual `modules`  
