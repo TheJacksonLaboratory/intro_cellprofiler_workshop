@@ -35,15 +35,6 @@ https://cellprofiler.org/home
 
 ---
 
-## A bit of background
-
-- project started in 2003 by Anne Carpenter and Thouis Jones at MIT
-- currently developed by [the Beth Cimini lab](https://cimini-lab.broadinstitute.org/) at the Broad Institute
-- \>15000 publications [citing CellProfiler](https://cellprofiler.org/citations)
-    - Many shared `pipelines`: [https://cellprofiler.org/published-pipelines](https://cellprofiler.org/published-pipelines)
-
----
-
 ## What is CellProfiler?
 
 CellProfiler is an open-source image analysis program
@@ -52,6 +43,15 @@ CellProfiler is an open-source image analysis program
 
 **Key feature**:  
 CellProfiler has a graphical user interface (`GUI`) for assembling image processing and analysis workflows (called `pipelines`) using a sequence of modular analysis `modules` 
+
+---
+
+## A bit of background
+
+- project started in 2003 by Anne Carpenter and Thouis Jones at MIT
+- currently developed by [the Beth Cimini lab](https://cimini-lab.broadinstitute.org/) at the Broad Institute
+- \>15000 publications [citing CellProfiler](https://cellprofiler.org/citations)
+    - Many shared `pipelines`: [https://cellprofiler.org/published-pipelines](https://cellprofiler.org/published-pipelines)
 
 ---
 
