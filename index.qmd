@@ -97,6 +97,17 @@ CellProfiler has a graphical user interface (`GUI`) for assembling image process
 
 - `pipelines` can be exported, but *do not contain image locations*—this is ideal for sharing or reuseing workflows
 
+## Typical `pipeline`
+
+- start with setting up `Input` modules
+- Add `Image Processing` modules to facillitate segmentation
+- Add `Object Processing` modules to segment the image (identify objects) and manipulate objects
+- Add `Measurement` modules to get quantified information you're interested in
+- Finish with `Data Tools` and `File Processing` to export data or images
+
+---
+
+
 ## Keys to success
 
 - ensure image inputs are properly set up (`NamesAndTypes`) and that they and intermediate step outputs have meaningful names
