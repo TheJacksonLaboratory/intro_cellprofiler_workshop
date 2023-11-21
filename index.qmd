@@ -10,6 +10,7 @@ format:
         chalkboard: 
             buttons: false
         controls-layout: bottom-right
+        controls: true
 ---
 
 ## Introduction to CellProfiler
@@ -107,6 +108,39 @@ CellProfiler has a graphical user interface (`GUI`) for assembling image process
 
 ---
 
+## CellProfiler UI
+
+![](images/CP_UI.png){fig-alt="Screenshot of empty CellProfiler UI with menu bar"}
+
+---
+
+![](images/CP_UI_1.png){fig-alt="Screenshot of empty CellProfiler UI with menu bar. At the top right, the Notes box is emphasized with red text. Below, in the middle-right, the Image list drag-and-drop is emphasized with red text."}
+
+---
+
+![](images/CP_UI_input.png){fig-alt="Screenshot of empty CellProfiler UI with menu bar. In the top left, the four Input modules are highlighted with a red box and red text."}
+
+---
+
+![](images/CP_UI_modules.png){fig-alt="Screenshot of empty CellProfiler UI with menu bar. On the middle-left, the area for adding pipeline modules is highlighted with red text. Below, the module buttons are highlighted with a red box."}
+
+---
+
+![](images/CP_UI_test_mode.png){fig-alt="Screenshot of CellProfiler UI with menu bar and a single module (ColorToGrey) open. At the top, the Test menu is open and the `Start Test Mode` option is highlighted with a red box. At the bottom left, the `Start Test Mode` button is highlighted with a red box."}
+
+---
+
+![](images/CP_UI_test_mode_2.png){fig-alt="Screenshot of CellProfiler UI with menu bar and a single module (ColorToGrey) open. Test mode is now active. At the top of the modules area, the Test mode buttons next to the ColorToGrey module are highlighted with a red box. At the bottom left, the Run and Step buttons are highlighted with a red box."}
+
+---
+
+![](images/CP_UI_test_mode_3.png){fig-alt="Screenshot of CellProfiler UI with menu bar and a single module (ColorToGrey) open. Test mode is now active. At the top, the Test menu is open and the Image set menu items are highlighted with a red box. At the bottom left, the `Next Image Set` button is highlighted with a red box."}
+
+---
+
+![](images/CP_UI_module_IO.png){fig-alt="Screenshot of CellProfiler UI with menu bar and a single module (ColorToGrey) open. In the middle right, the ColorToGrey module options are showing with the input image selection and output image naming highlighted with red boxes."}
+
+---
 
 ## Keys to success
 
@@ -114,6 +148,8 @@ CellProfiler has a graphical user interface (`GUI`) for assembling image process
 - use `Test` mode to see the outputs of individual `modulues` (`pipeline` steps) one-at-a-time
     - let's you test parameters on a single image or any number of images (even a randomly selected one)
     - can run the whole `pipeline` or just individual `modules`  
+
+---
 
 ## Getting more help
 
