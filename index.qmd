@@ -144,3 +144,31 @@ CellProfiler has a graphical user interface (`GUI`) for assembling image process
 - Extensive examples: [https://cellprofiler.org/examples](https://cellprofiler.org/examples)
 
 - Image.sc forum: [https://forum.image.sc/tag/cellprofiler](https://forum.image.sc/tag/cellprofiler)
+
+# Segmentation Tutorial
+
+- Ensure you have the tutorial materials downloaded. If not, download the [`.zip file`](https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/Archive_EN.zip)
+- Inside the folder is a PDF walkthrough, if you want to follow along on your own
+
+## Import the starting pipeline
+
+- Inside the folder are also two `.cppipe` files, which define the CellProfiler pipelines
+  - `segmentation_start.cppipe` is our starting point, it handles the initial image importing and set up. 
+  - Drag-and-drop it onto the Pipeline Modules section (middle left pane) to import it.
+
+:::{.callout-tip}
+The `segmentation_final.cppipe` is the final pipeline, which you can use to see the completed analysis pipeline!
+:::
+
+## Import the images
+
+- Import the images by drag-and-dropping the `images_Illum-corrected` folder onto the central image list pane
+- Click on `Apply filters to the file list` to filter out non-images
+
+:::{.callout-tip}
+Double-click an image in the list to open and view it
+:::
+
+## Completed setup
+
+![](images/seg_tutorial_setup.png){fig-alt="Screenshot of CellProfiler UI with menu bar and the segmentation_start pipeline imported. The image list is populated with images and an example is open."}
