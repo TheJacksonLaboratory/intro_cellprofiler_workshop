@@ -2,3 +2,6 @@
 .DS_Store
 .jupyter_cache/
 test.md
+.quarto/
+index_files/
+index.html
