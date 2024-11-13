@@ -172,3 +172,12 @@ Double-click an image in the list to open and view it
 ## Completed setup
 
 ![](images/seg_tutorial_setup.png){fig-alt="Screenshot of CellProfiler UI with menu bar and the segmentation_start pipeline imported. The image list is populated with images and an example is open."}
+
+# Input Modules Tutorial
+
+This tutorial will introduce you to Input Modules in CellProfiler: Images, Metadata, NamesAndTypes, and Groups. These modules are crucial for loading and organizing your input data so CellProfiler manages it properly in the analysis pipeline.
+
+## Getting started
+
+- Ensure you have the tutorial materials downloaded. We will use a sub of the official CellProfiler [Input Modules Tutorial materials](https://tutorials.cellprofiler.org/#input-modules). You can download the [`.zip file`](resources/InputModulesTutorialMaterials%20.zip).
+- There is a [blog post walkthrough](https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial) this tutorial if you want to follow along on your own.
