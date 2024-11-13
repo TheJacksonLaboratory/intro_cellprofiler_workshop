@@ -334,8 +334,8 @@
 <p>Research IT</p>
 <p><img data-src="images/image.png" alt="CellProfiler logo"> https://cellprofiler.org/home</p>
 </section>
-<section id="plan-for-day-1" class="slide level2">
-<h2>Plan for Day 1</h2>
+<section id="plan" class="slide level2">
+<h2>Plan</h2>
 <ul>
 <li>Introduction to CellProfiler</li>
 <li>Overview of basic CellProfiler concepts
@@ -343,7 +343,8 @@
 <li>projects, pipelines, modules</li>
 </ul></li>
 <li>User Interface (UI) Walk-through</li>
-<li>Hands-on tutorial</li>
+<li>Hands-on <a href="https://tutorials.cellprofiler.org/#beginner-segmentation">Segmentation Tutorial</a></li>
+<li>Hands-on <a href="https://tutorials.cellprofiler.org/#input-modules">Input Modules Tutorial</a></li>
 </ul>
 </section>
 <section id="what-is-cellprofiler" class="slide level2">
@@ -358,7 +359,7 @@ CellProfiler has a graphical user interface (<code>GUI</code>) for assembling im
 <ul>
 <li>project started in 2003 by Anne Carpenter and Thouis Jones at MIT</li>
 <li>currently developed by <a href="https://cimini-lab.broadinstitute.org/">the Beth Cimini lab</a> at the Broad Institute</li>
-<li>&gt;15000 publications <a href="https://cellprofiler.org/citations">citing CellProfiler</a>
+<li>&gt;17000 publications <a href="https://cellprofiler.org/citations">citing CellProfiler</a>
 <ul>
 <li>Many shared <code>pipelines</code>: <a href="https://cellprofiler.org/published-pipelines">https://cellprofiler.org/published-pipelines</a></li>
 </ul></li>
@@ -425,8 +426,9 @@ CellProfiler has a graphical user interface (<code>GUI</code>) for assembling im
 <li>Finish with <code>Data Tools</code> and <code>File Processing</code> to export data or images</li>
 </ul>
 </section>
-<section id="cellprofiler-ui" class="slide level2">
-<h2>CellProfiler UI</h2>
+<section>
+<section id="cellprofiler-ui" class="title-slide slide level1 center">
+<h1>CellProfiler UI</h1>
 
 <img data-src="images/CP_UI.png" alt="Screenshot of empty CellProfiler UI with menu bar" class="r-stretch"></section>
 <section class="slide level2">
@@ -456,9 +458,10 @@ CellProfiler has a graphical user interface (<code>GUI</code>) for assembling im
 <section class="slide level2">
 
 
-<img data-src="images/CP_UI_module_IO.png" alt="Screenshot of CellProfiler UI with menu bar and a single module (ColorToGrey) open. In the middle right, the ColorToGrey module options are showing with the input image selection and output image naming highlighted with red boxes." class="r-stretch"></section>
-<section id="keys-to-success" class="slide level2">
-<h2>Keys to success</h2>
+<img data-src="images/CP_UI_module_IO.png" alt="Screenshot of CellProfiler UI with menu bar and a single module (ColorToGrey) open. In the middle right, the ColorToGrey module options are showing with the input image selection and output image naming highlighted with red boxes." class="r-stretch"></section></section>
+<section>
+<section id="keys-to-success" class="title-slide slide level1 center">
+<h1>Keys to success</h1>
 <ul>
 <li>ensure image inputs are properly set up (<code>NamesAndTypes</code>) and that they and intermediate step outputs have meaningful names</li>
 <li>use <code>Test</code> mode to see the outputs of individual <code>modulues</code> (<code>pipeline</code> steps) one-at-a-time
@@ -476,13 +479,80 @@ CellProfiler has a graphical user interface (<code>GUI</code>) for assembling im
 <li><p>Extensive examples: <a href="https://cellprofiler.org/examples">https://cellprofiler.org/examples</a></p></li>
 <li><p>Image.sc forum: <a href="https://forum.image.sc/tag/cellprofiler">https://forum.image.sc/tag/cellprofiler</a></p></li>
 </ul>
+</section></section>
+<section>
+<section id="segmentation-tutorial" class="title-slide slide level1 center">
+<h1>Segmentation Tutorial</h1>
+<ul>
+<li>Ensure you have the tutorial materials downloaded. If not, download the <a href="https://github.com/CellProfiler/tutorials/raw/master/BeginnerSegmentation/Archive_EN.zip"><code>.zip file</code></a></li>
+<li>Inside the folder is a PDF walkthrough, if you want to follow along on your own</li>
+</ul>
+</section>
+<section id="import-the-starting-pipeline" class="slide level2">
+<h2>Import the starting pipeline</h2>
+<ul>
+<li>Inside the folder are also two <code>.cppipe</code> files, which define the CellProfiler pipelines
+<ul>
+<li><code>segmentation_start.cppipe</code> is our starting point, it handles the initial image importing and set up.</li>
+<li>Drag-and-drop it onto the Pipeline Modules section (middle left pane) to import it.</li>
+</ul></li>
+</ul>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>The <code>segmentation_final.cppipe</code> is the final pipeline, which you can use to see the completed analysis pipeline!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="import-the-images" class="slide level2">
+<h2>Import the images</h2>
+<ul>
+<li>Import the images by drag-and-dropping the <code>images_Illum-corrected</code> folder onto the central image list pane</li>
+<li>Click on <code>Apply filters to the file list</code> to filter out non-images</li>
+</ul>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Double-click an image in the list to open and view it</p>
+</div>
+</div>
+</div>
+</section>
+<section id="completed-setup" class="slide level2">
+<h2>Completed setup</h2>
+
+<img data-src="images/seg_tutorial_setup.png" alt="Screenshot of CellProfiler UI with menu bar and the segmentation_start pipeline imported. The image list is populated with images and an example is open." class="r-stretch"></section></section>
+<section>
+<section id="input-modules-tutorial" class="title-slide slide level1 center">
+<h1>Input Modules Tutorial</h1>
+<p>This tutorial will introduce you to Input Modules in CellProfiler: Images, Metadata, NamesAndTypes, and Groups. These modules are crucial for loading and organizing your input data so CellProfiler manages it properly in the analysis pipeline.</p>
+</section>
+<section id="getting-started" class="slide level2">
+<h2>Getting started</h2>
+<ul>
+<li>Ensure you have the tutorial materials downloaded. We will use a sub of the official CellProfiler <a href="https://tutorials.cellprofiler.org/#input-modules">Input Modules Tutorial materials</a>. You can download the <a href="resources/InputModulesTutorialMaterials%20.zip"><code>.zip file</code></a>.</li>
+<li>There is a <a href="https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial">blog post walkthrough</a> this tutorial if you want to follow along on your own.</li>
+</ul>
 <div class="quarto-auto-generated-content">
 <p><img src="images/JAX_logo_rgb_transparentback.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p>Imaging Applications, Research IT</p>
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
