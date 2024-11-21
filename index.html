@@ -539,6 +539,28 @@ CellProfiler has a graphical user interface (<code>GUI</code>) for assembling im
 <section id="input-modules-tutorial" class="title-slide slide level1 center">
 <h1>Input Modules Tutorial</h1>
 <p>This tutorial will introduce you to Input Modules in CellProfiler: <code>Images</code>, <code>Metadata</code>, <code>NamesAndTypes</code>, and <code>Groups</code>. These modules are crucial for loading and organizing your input data so CellProfiler manages it properly in the analysis pipeline.</p>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>Setting up Input Modules properly is crucial to being able to analyze your data!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="input-modules" class="slide level2">
+<h2>Input Modules</h2>
+<ul>
+<li><code>Images</code> module: set where your images are located, apply filters to include/exclude certain files</li>
+<li><code>Metadata</code> module [optional]: extract and associate metadata with your images, e.g.&nbsp;well plate layout, treatment, time points</li>
+<li><code>NamesAndTypes</code> module: give each image a meaningful name by which modules in the analysis pipeline will refer to it</li>
+<li><code>Groups</code> module [optional]: group images together to be analyzed independently, typically by field-of-view, e.g.&nbsp;z-stack, time course</li>
+</ul>
 </section>
 <section id="getting-started" class="slide level2">
 <h2>Getting started</h2>
@@ -546,6 +568,19 @@ CellProfiler has a graphical user interface (<code>GUI</code>) for assembling im
 <li>Ensure you have the tutorial materials downloaded. We will use a sub of the official CellProfiler <a href="https://tutorials.cellprofiler.org/#input-modules">Input Modules Tutorial materials</a>. You can download the <a href="resources/InputModulesTutorialMaterials.zip"><code>.zip file</code></a>.</li>
 <li>There is a <a href="https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial">blog post walkthrough</a> this tutorial if you want to follow along on your own.</li>
 </ul>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Each example has <code>.cppipe</code> file, which has the “solution”</p>
+</div>
+</div>
+</div>
 <div class="quarto-auto-generated-content">
 <p><img src="images/JAX_logo_rgb_transparentback.png" class="slide-logo"></p>
 <div class="footer footer-default">
