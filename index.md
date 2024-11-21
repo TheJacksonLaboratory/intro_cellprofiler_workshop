@@ -177,7 +177,22 @@ Double-click an image in the list to open and view it
 
 This tutorial will introduce you to Input Modules in CellProfiler: `Images`, `Metadata`, `NamesAndTypes`, and `Groups`. These modules are crucial for loading and organizing your input data so CellProfiler manages it properly in the analysis pipeline.
 
+:::{.callout-important}
+Setting up Input Modules properly is crucial to being able to analyze your data!
+:::
+
+## Input Modules
+
+- `Images` module: set where your images are located, apply filters to include/exclude certain files
+- `Metadata` module [optional]: extract and associate metadata with your images, e.g. well plate layout, treatment, time points
+- `NamesAndTypes` module: give each image a meaningful name by which modules in the analysis pipeline will refer to it
+- `Groups` module [optional]: group images together to be analyzed independently, typically by field-of-view, e.g. z-stack, time course
+
 ## Getting started
 
 - Ensure you have the tutorial materials downloaded. We will use a sub of the official CellProfiler [Input Modules Tutorial materials](https://tutorials.cellprofiler.org/#input-modules). You can download the [`.zip file`](resources/InputModulesTutorialMaterials.zip).
 - There is a [blog post walkthrough](https://carpenter-singh-lab.broadinstitute.org/blog/input-modules-tutorial) this tutorial if you want to follow along on your own.
+
+:::{.callout-tip}
+Each example has `.cppipe` file, which has the "solution"
+:::
