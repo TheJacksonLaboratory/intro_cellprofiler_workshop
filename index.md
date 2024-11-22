@@ -196,3 +196,21 @@ Setting up Input Modules properly is crucial to being able to analyze your data!
 :::{.callout-tip}
 Each example has `.cppipe` file, which has the "solution"
 :::
+
+## Metadata `regex` tips
+
+- The [https://regex101.com/](https://regex101.com/) website is great! Just ensure you have one of the `PCRE` flavors selected.
+- Copy-paste the file name you want to parse into the `test string` box
+- Capture groups are always of the format:  
+`(?P<Name>[what]{how many})`
+    - `Name` is what you will refer to in the `Metadata` module
+    - `what` can be digits, e.g. 0-9, or capital letters, e.g. A-Z, etc.
+    - `how many` is an integer, e.g. 1, 2, 3, etc.
+
+## A few more `regex` tips
+
+- `.` is a wildcard for any character
+- `*` is a quantifier for 0 or more consecutive of the preceding character/token, e.g.: `[A-Z]*` to match any number of capital letters
+- `^` is an anchor for the start of the string
+- `$` is an anchor for the end of the string--don't forget about extensions!
+- `\` is an escape character, e.g. `\.` to match a period, rather than any character
