@@ -581,6 +581,30 @@ CellProfiler has a graphical user interface (<code>GUI</code>) for assembling im
 </div>
 </div>
 </div>
+</section>
+<section id="metadata-regex-tips" class="slide level2">
+<h2>Metadata <code>regex</code> tips</h2>
+<ul>
+<li>The <a href="https://regex101.com/">https://regex101.com/</a> website is great! Just ensure you have one of the <code>PCRE</code> flavors selected.</li>
+<li>Copy-paste the file name you want to parse into the <code>test string</code> box</li>
+<li>Capture groups are always of the format:<br>
+<code>(?P&lt;Name&gt;[what]{how many})</code>
+<ul>
+<li><code>Name</code> is what you will refer to in the <code>Metadata</code> module</li>
+<li><code>what</code> can be digits, e.g.&nbsp;0-9, or capital letters, e.g.&nbsp;A-Z, etc.</li>
+<li><code>how many</code> is an integer, e.g.&nbsp;1, 2, 3, etc.</li>
+</ul></li>
+</ul>
+</section>
+<section id="a-few-more-regex-tips" class="slide level2">
+<h2>A few more <code>regex</code> tips</h2>
+<ul>
+<li><code>.</code> is a wildcard for any character</li>
+<li><code>*</code> is a quantifier for 0 or more consecutive of the preceding character/token, e.g.: <code>[A-Z]*</code> to match any number of capital letters</li>
+<li><code>^</code> is an anchor for the start of the string</li>
+<li><code>$</code> is an anchor for the end of the string–don’t forget about extensions!</li>
+<li><code>\</code> is an escape character, e.g.&nbsp;<code>\.</code> to match a period, rather than any character</li>
+</ul>
 <div class="quarto-auto-generated-content">
 <p><img src="images/JAX_logo_rgb_transparentback.png" class="slide-logo"></p>
 <div class="footer footer-default">
